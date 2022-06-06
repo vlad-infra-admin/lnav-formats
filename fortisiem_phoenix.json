@@ -16,8 +16,8 @@
         },
         "value" : {
             "host" : { "kind" : "string", "identifier" : true },
-            "body" : { "kind" : "string", "identifier" : true},
-            "process" : {"kind" : "string","identifier" : true }
+            "body" : { "kind" : "string", "identifier" : true },
+            "process" : { "kind" : "string","identifier" : true }
         },
         "sample" : [
             {
