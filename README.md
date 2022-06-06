@@ -3,8 +3,10 @@ http://lnav.org is a powerful log file reader, designed to take multiple log fil
 
 This repository is for the log file format descriptions I've written so far.
 
-# Instalation
+# Installation
 1. Create a directory in your home directory if you don't have one `mkdir -p ~/.lnav/formats`
-2. Download and place a log file in to the directory you created earlier
+2. Download and place a log file(`fortisiem_phoenix.json`) in to the directory you created earlier
 3. Run command `lnav -i ~/.lnav/formats/fortisiem_phoenix.json` to load and install format
 
+# Phoenix Log Preview
+![Image](images/fortisiem-phoenix-log-preview.png)
