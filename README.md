@@ -4,14 +4,18 @@ http://lnav.org is a powerful log file reader, designed to take multiple log fil
 This repository is for the log file format descriptions I've written so far.
 
 # Installation for FortiSIEM Log format
-1. Create a directory in your home directory if you don't have one   
-`mkdir -p ~/.lnav/formats`
+1. Download a log file
+`wget https://raw.githubusercontent.com/vlad-infra-admin/lnav-formats/main/fortisiem_phoenix.json`
 
-3. Download and place a log file(`fortisiem_phoenix.json`) in to the directory you created earlier  
-`mv fortisiem_phoenix.json ~/.lnav/formats/`
+2. Create a directory in your home directory if you don't have one  
+`ls ~/.lnav/formats/installed/ || mkdir -p ~/.lnav/formats/installed/`
 
-4. Lnav should find the new format the next time you run it. You can manually load and install, run command  
-`lnav -i ~/.lnav/formats/fortisiem_phoenix.json`
+3. Download and place a log file(`fortisiem_phoenix.json`) in to the directory you created earlier.
+Lnav should find the new format the next time you run it.  
+`mv fortisiem_phoenix.json ~/.lnav/formats/installed`
+
+4.(OPTIONAL)  You can manually load and install, run command  
+`lnav -i fortisiem_phoenix.json`
 
 # Phoenix Log Preview
 ![Image](images/fortisiem-phoenix-log-preview.png)
