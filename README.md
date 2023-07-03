@@ -4,9 +4,9 @@ http://lnav.org is a powerful log file reader, designed to take multiple log fil
 This repository is for the log file format descriptions I've written so far.
 
 # Installation for FortiSIEM Log format
-1. Download a log file
+1. Download the log file
 2. Create a directory in your home directory if you don't have one
-3. Download and place a log file(`fortisiem_phoenix.json`) in to the directory you created earlier.
+3. Place the log file(`fortisiem_phoenix.json`) in to the directory you created earlier.
 Lnav should find the new format the next time you run it.
 
 Commands bellow:
