@@ -12,8 +12,8 @@ Lnav should find the new format the next time you run it.
 Commands bellow:
 ```shell
 wget https://raw.githubusercontent.com/vlad-infra-admin/lnav-formats/main/fortisiem_phoenix.json
-mv fortisiem_phoenix.json ~/.lnav/formats/installed
 ls ~/.lnav/formats/installed/ || mkdir -p ~/.lnav/formats/installed/
+mv fortisiem_phoenix.json ~/.lnav/formats/installed
 ```
 
 4.(OPTIONAL)  You can manually load and install, run command  
