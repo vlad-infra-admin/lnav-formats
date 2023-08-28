@@ -12,12 +12,15 @@ Lnav should find the new format the next time you run it.
 Commands bellow:
 ```shell
 wget https://raw.githubusercontent.com/vlad-infra-admin/lnav-formats/main/fortisiem_phoenix.json
+lnav -i fortisiem_phoenix.json
+rm -f fortisiem_phoenix.json
+```
+
+4.(OPTIONAL)  You can also move json to desired folder manually  
+```shell
 ls ~/.lnav/formats/installed/ || mkdir -p ~/.lnav/formats/installed/
 mv fortisiem_phoenix.json ~/.lnav/formats/installed
 ```
-
-4.(OPTIONAL)  You can manually load and install, run command  
-`lnav -i fortisiem_phoenix.json`
 
 # Phoenix Log Preview
 ![Image](images/fortisiem-phoenix-log-preview.png)
