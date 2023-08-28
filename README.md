@@ -14,7 +14,8 @@ lnav -i fortisiem_phoenix.json
 rm -f fortisiem_phoenix.json
 ```
 
-3.(OPTIONAL)  Place the log file(`fortisiem_phoenix.json`) in to the directory you created earlier. 
+3.(OPTIONAL)  Place the log file(`fortisiem_phoenix.json`) in to the directory
+If dirrectory is not present it will be created. Commands bellow: 
 ```shell
 ls ~/.lnav/formats/installed/ || mkdir -p ~/.lnav/formats/installed/
 mv fortisiem_phoenix.json ~/.lnav/formats/installed
