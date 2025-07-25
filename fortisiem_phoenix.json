@@ -1,10 +1,11 @@
 {
+"$schema": "https://lnav.org/schemas/format-v1.schema.json",
     "fortisiem_phoenix_log" : {
         "title" : "FortiSIEM Phoenix log format",
         "description" : "Log format used in FortiSIEM.",
         "regex" : {
             "basic" : {
-            "pattern" : "^(?<timestamp>\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}\\.\\d{6}.\\d{2}:\\d{2}) (?<host>[a-zA-Z0-9_\\-\\.]+) (?<process>[A-Za-z_\\.\\-/]+(\\[\\d+\\])?:) (?<level>\\[[A-Z_]+\\]:\\[[A-Za-z]+\\]=[A-Z_]+)?.*$"
+            "pattern" : "^(?<timestamp>\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}\\.\\d{6}[+-]\\d{2}:\\d{2})\\s+(?<host>[\\w.-]+)\\s+(?<process>[\\w./-]+(?:\\[\\d+\\])?):\\s*(?<level>\\[[A-Z_]+\\]:\\[[A-Za-z]+\\]=[A-Z_]+)?(?<body>.*)$"
             }
         },
         "level-field" : "level",
@@ -16,7 +17,7 @@
         },
         "value" : {
             "host" : { "kind" : "string", "identifier" : true },
-            "body" : { "kind" : "string", "identifier" : true },
+            "body" : { "kind" : "string", "identifier" : false },
             "process" : { "kind" : "string","identifier" : true }
         },
         "sample" : [
